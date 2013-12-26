@@ -107,6 +107,14 @@ class MinecraftDrawing:
     # 3d implementation of bresenham line algorithm
     def getLine(self, x1, y1, z1, x2, y2, z2):
 
+        #ensure all args are ints
+        x1 = int(x1)
+        x2 = int(x2)
+        y1 = int(y1)
+        y2 = int(y2)
+        z1 = int(z1)
+        z2 = int(z2)
+
         # return maximum of 2 values
         def MAX(a,b):
             if a > b: return a
